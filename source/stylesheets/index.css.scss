@@ -1,0 +1,17 @@
+body.index {
+
+  article {
+    padding-left: 30px;
+
+    .extract {
+      // Every element after 1st hidden
+      :nth-child(1n+2) { display: none }
+
+      :first-child {
+        white-space: nowrap;              
+        overflow: hidden;              /* "overflow" value must be different from "visible" */ 
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+details:
+  email: sa@abcfriends.org.au
+  phone:  0412 139 485
+  postal: PO Box 7158, Hutt Street, Adelaide, SA 5000
+
+comitee:
+  - 
+    name: Jessica Knight
+    role: President
+  -
+    name: Dianne Jones
+    role: Secretary
+  -
+    name: Aussie Kanck
+    role: Treasurer / Membership

@@ -1,0 +1,14 @@
+@import 'colours';
+
+body.news {
+
+  article p:first-of-type {
+    &:first-letter { 
+      float: left;
+      font-size: 3em;
+      color:  $primary-color;
+      margin-right: 0.10em;
+      line-height: 90%;
+    }
+  }
+}

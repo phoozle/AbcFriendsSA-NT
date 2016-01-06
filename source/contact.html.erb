@@ -1,0 +1,37 @@
+---
+title: Contact
+---
+
+<div class="row">
+  <!-- Email / Phone -->
+  <div class="col-md-6">
+    <h1><i class="fa fa-fw fa-comment"></i> Contact</h1>
+    <ul class="list-group">
+      <li class="list-group-item">
+        <i class="fa fa-fw fa-envelope"></i>
+        <b>Email:</b> <%= mail_to data.contact.details.email %>
+      </li>
+
+      <li class="list-group-item">
+        <i class="fa fa-fw fa-phone-square"></i>
+        <b>Phone:</b> <%= link_to data.contact.details.phone, "tel:#{data.contact.details.phone}" %>
+      </li>
+
+      <li class="list-group-item">
+        <i class="fa fa-fw fa-map-marker"></i>
+        <b>Postal:</b> <%= data.contact.details.postal %>
+      </li>
+    </ul>
+  </div>
+
+  <!-- People -->
+  <div class="col-md-6">
+    <h1><i class="fa fa-fw fa-users"></i> Committee</h1>
+
+    <ul class="list-group">
+      <% data.contact.comitee.each do |comitee_member| %>
+        <li class="list-group-item"><b><%= comitee_member.name %></b> - <%= comitee_member.role %></li>
+      <% end %>
+    </ul>
+  </div>
+</div>

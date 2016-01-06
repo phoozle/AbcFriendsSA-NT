@@ -1,0 +1,21 @@
+---
+title: News
+---
+
+<% back_link = link_to '<i class="fa fa-angle-left"></i> Back', "/", class: "btn btn-default" %>
+<% content_for :mobile_nav do %>
+  <%= back_link %>
+<% end %>
+
+<article>
+  <h1>
+    <div class="hidden-xs" style="display: inline; margin-right: 0.25em;"><%= back_link %></div>
+
+    <%= article.name %>
+    <small><%= article.published %></small>
+  </h1>
+
+  <hr class="no-margins"><br>
+
+  <%= partial "/news/articles/#{article_pathname(article)}.md" %>
+</article>
