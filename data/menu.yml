@@ -5,7 +5,7 @@
     target: "_blank"
 - 
   name: About Us
-  path: about-us.html
+  path: /about-us.html
 - 
   name: Contact
-  path: contact.html
+  path: /contact.html

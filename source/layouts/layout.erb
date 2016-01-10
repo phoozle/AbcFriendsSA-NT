@@ -61,7 +61,7 @@
               <li class="<%= 'active' if page_classes.include?('news') || page_classes == "index" %>"><a href="/">Latest News</a></li>
 
               <% data.menu.each do |page| %>
-                <li class="<%= 'active' if page_classes.include?(page.path.match(/[^.]*/)[0]) %>">
+                <li class="<%= 'active' if page_classes.include?(page.path.match(/\/([^.]*)/)[1]) %>">
                   <%= link_to page.name, page.path, page.options %>
                 </li>
               <% end %>
